@@ -11,7 +11,7 @@ const Setting = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:3000/api/getuserinformation",
+        "https://pothighar-mern-backend.onrender.com/api/getuserinformation",
         { headers }
       );
       setProfileData(response.data);
@@ -25,7 +25,7 @@ const Setting = () => {
   };
 
   const submitAddress = async (e) => {
-    const response = await axios.put("http://localhost:3000/api/updateaddress", value, {headers});
+    const response = await axios.put("https://pothighar-mern-backend.onrender.com/api/updateaddress", value, {headers});
     alert(response.data.message);
   }
   return (

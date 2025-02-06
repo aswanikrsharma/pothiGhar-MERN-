@@ -8,7 +8,7 @@ const BookCard = ({ data, fav }) => {
     bookid: data._id,
   };
   const handleRemoveFav = async () => {
-    const response = await axios.put("http://localhost:3000/api/remove-favourite-books", {}, {headers});
+    const response = await axios.put("https://pothighar-mern-backend.onrender.com/api/remove-favourite-books", {}, {headers});
     alert(response.data.message);
   }
   return (

@@ -23,7 +23,7 @@ const Signup = () => {
       ) {
         alert("All fields are required");
       } else {
-        const response = await axios.post("http://localhost:3000/api/signup", values);
+        const response = await axios.post("https://pothighar-mern-backend.onrender.com/api/signup", values);
         alert(response.data.message);
         navigate('/login');
       }

@@ -9,7 +9,7 @@ const Favourite = () => {
   };
   const fetch = async () => {
     const response = await axios.get(
-      "http://localhost:3000/api/get-all-favourite-books",
+      "https://pothighar-mern-backend.onrender.com/api/get-all-favourite-books",
       { headers }
     );
     setFav(response.data.data);

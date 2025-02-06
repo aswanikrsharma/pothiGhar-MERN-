@@ -19,7 +19,7 @@ const Login = () => {
         alert("All fields are required");
       } else {
         const response = await axios.post(
-          "http://localhost:3000/api/login",
+          "https://pothighar-mern-backend.onrender.com/api/login",
           values
         );
         // console.log(response.data);

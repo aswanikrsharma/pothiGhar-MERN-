@@ -15,7 +15,7 @@ const Profile = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:3000/api/getuserinformation",
+        "https://pothighar-mern-backend.onrender.com/api/getuserinformation",
         {headers});
       setProfile(response.data);
     };

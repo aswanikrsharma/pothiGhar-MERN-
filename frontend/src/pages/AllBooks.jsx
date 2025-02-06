@@ -7,7 +7,7 @@ const AllBooks = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:3000/api/getallbooks"
+        "https://pothighar-mern-backend.onrender.com/api/getallbooks"
       );
       setData(response.data.data);
     };

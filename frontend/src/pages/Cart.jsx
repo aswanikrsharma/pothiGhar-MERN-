@@ -16,7 +16,7 @@ const Cart = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:3000/api/get-user-cart",
+        "https://pothighar-mern-backend.onrender.com/api/get-user-cart",
         { headers }
       );
       setCart(response.data.data);
@@ -26,7 +26,7 @@ const Cart = () => {
 
   const deleteItem = async (bookid) => {
     const response = await axios.put(
-      `http://localhost:3000/api/remove-books-from-cart/${bookid}`,
+      `https://pothighar-mern-backend.onrender.com/api/remove-books-from-cart/${bookid}`,
       {},
       { headers }
     );
@@ -47,7 +47,7 @@ const Cart = () => {
   const placeorder = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/place-order",
+        "https://pothighar-mern-backend.onrender.com/api/place-order",
         { order: cart },
         { headers }
       );

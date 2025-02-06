@@ -38,7 +38,7 @@ const UpdateBook = () => {
           }
           else{
               const response = await axios.put(
-                "http://localhost:3000/api/updatebook", Data, {headers}
+                "https://pothighar-mern-backend.onrender.com/api/updatebook", Data, {headers}
               );
               setData({
                   url: "",
@@ -60,7 +60,7 @@ const UpdateBook = () => {
       useEffect(() => {
         const fetch = async () => {
           const response = await axios.get(
-            `http://localhost:3000/api/getbookbyid/${id}`
+            `https://pothighar-mern-backend.onrender.com/api/getbookbyid/${id}`
           );
           setData(response.data.data);
         };

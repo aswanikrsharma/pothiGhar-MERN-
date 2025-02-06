@@ -11,7 +11,7 @@ const UserOrderHistory = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        `http://localhost:3000/api/get-order-history`,
+        `https://pothighar-mern-backend.onrender.com/api/get-order-history`,
         { headers }
       );
       setOrderHistory(response.data.data);

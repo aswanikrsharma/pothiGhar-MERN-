@@ -20,7 +20,7 @@ const AllOrders = () => {
   };
   const fetch = async () => {
     const response = await axios.get(
-      "http://localhost:3000/api/get-all-orders",
+      "https://pothighar-mern-backend.onrender.com/api/get-all-orders",
       { headers }
     );
     setAllOrders(response.data.data);
@@ -36,7 +36,7 @@ const AllOrders = () => {
   const submitChanges = async (i) => {
     const id = AllOrders[i]._id;
     const response = await axios.put(
-      `http://localhost:3000/api/update-order-status`,
+      `https://pothighar-mern-backend.onrender.com/api/update-order-status`,
       { Values: Values, id: id},
       { headers }
     );

@@ -18,7 +18,7 @@ const Bookdetails = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        `http://localhost:3000/api/getbookbyid/${id}`
+        `https://pothighar-mern-backend.onrender.com/api/getbookbyid/${id}`
       );
       console.log(response)
       setData(response.data.data);
@@ -34,7 +34,7 @@ const Bookdetails = () => {
 
   const handleFav = async () => {
     const response = await axios.put(
-      "http://localhost:3000/api/mark-favourite-books",
+      "https://pothighar-mern-backend.onrender.com/api/mark-favourite-books",
       {},
       { headers }
     );
@@ -43,7 +43,7 @@ const Bookdetails = () => {
 
 const handleAddToCart = async () => {
   const response = await axios.put(
-    "http://localhost:3000/api/add-to-cart",
+    "https://pothighar-mern-backend.onrender.com/api/add-to-cart",
     {},
     { headers }
   );
@@ -53,7 +53,7 @@ const handleAddToCart = async () => {
 const deleteBook = async (bookid) => {
   try {
     const response = await axios.delete(
-      `http://localhost:3000/api/deletebook`,
+      `https://pothighar-mern-backend.onrender.com/api/deletebook`,
       {
         headers,
         data: { bookid }, // Send bookid in the request body
