@@ -28,14 +28,14 @@ const UserOrderHistory = () => {
       )}
       {orderHistory && orderHistory.length === 0 && (
         <div>
-          <h1 className="text-white">No Order History</h1>
+          <h1 className="text-pink-500">No Order History</h1>
         </div>
       )}
       {
         orderHistory && orderHistory.length > 0 && (
           <div className="h-[1005] p-0 md:p-4 text-zinc-100">
-          <h1 className="text-3xl md:5xl font-semibold text-zinc-500 mb-8">Your order history</h1>
-          <div className="mt-4 bg-zinc-800 w-full rounded py-2 px-4 flex gap-2">
+          <h1 className="text-3xl md:5xl font-semibold text-pink-500 mb-8">Your order history</h1>
+          <div className="mt-4 shadow-md text-black w-full rounded py-2 px-4 flex gap-2">
             <div className="w-[3%]">
               <h1 className="text-center">Sr.</h1>
             </div>
@@ -56,7 +56,7 @@ const UserOrderHistory = () => {
             </div>
           </div>
           {orderHistory.map((items, i) => (
-            <div className="bg-zinc-800 w-full rounded py-2 px-4 flex gap-4 hover:bg-zinc-900 hover:cursor-pointer">
+            <div className="text-black shadow-sm w-full rounded py-2 px-4 flex gap-4 hover:bg-zinc-50 hover:cursor-pointer">
             <div className="w-[3%]">
               <h1 className="text-center">{i+1}</h1>
             </div>

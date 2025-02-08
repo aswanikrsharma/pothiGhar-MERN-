@@ -37,27 +37,27 @@ const Setting = () => {
         </div>
       )}
       {ProfileData && (
-        <div className="h-[100%] p-0 md:p-4 text-zinc-100">
-          <h1 className="text-3xl md:text:5xl font-semibold text-zinc-500 mb-8">
+        <div className="h-[100%] p-0 md:p-4 text-black">
+          <h1 className="text-3xl md:text:5xl font-semibold text-pink-500 mb-8">
             Setting
           </h1>
           <div className="flex gap-12">
             <div className="">
               <label htmlFor=""> Username</label>
-              <p className="p-2 rounded bg-zinc-800 mt-2 font-semibold">
+              <p className="p-2 rounded shadow-lg mt-2 font-semibold">
                 {ProfileData.username}
               </p>
             </div>
             <div className="">
               <label htmlFor=""> Email</label>
-              <p className="p-2 rounded bg-zinc-800 mt-2 font-semibold">
+              <p className="p-2 rounded shadow-lg mt-2 font-semibold">
                 {ProfileData.email}
               </p>
             </div>
             <div className="flex flex-col ">
               <label htmlFor="" > Address</label>
               <textarea
-                className="p-2 rounded bg-zinc-800 mt-2 font-semibold "
+                className="p-2 rounded shadow-lg mt-2 font-semibold "
                 rows="5"
                 placeholder="Address"
                 name="address"

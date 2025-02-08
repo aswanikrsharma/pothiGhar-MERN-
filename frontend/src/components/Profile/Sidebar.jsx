@@ -11,8 +11,8 @@ const Sidebar = ({ data }) => {
       <div className="flex items-center flex-col justify-center">
         {" "}
         <img src={data.avatar} alt="/" className="h-[10vh]" />
-        <p className="mt-1 text-normal text-zinc-300">{data.username}</p>
-        <p className="mt-1 text-normal text-zinc-300">{data.email}</p>
+        <p className="mt-1 text-normal text-white">{data.username}</p>
+        <p className="mt-1 text-normal text-white">{data.email}</p>
         <div className="w-full mt-4 h-[1px] bg-zinc-500"></div>
       </div>
 
@@ -20,17 +20,17 @@ const Sidebar = ({ data }) => {
         <div className="w-full flex-col items-center justify-center hidden md:flex">
         <Link
           to="/profile"
-          className="text-zinc-100 font-semibold w-full py-2 mt-4 text-center hover:bg-zinc-900 rounded transition-all duration-300">
+          className="text-white font-semibold w-full py-2 mt-4 text-center hover:bg-zinc-900 rounded transition-all duration-300">
           Favourites
         </Link>
         <Link
           to="/profile/orderHistory"
-          className="text-zinc-100 font-semibold w-full py-2 mt-4 text-center hover:bg-zinc-900 rounded transition-all duration-300">
+          className="text-white font-semibold w-full py-2 mt-4 text-center hover:bg-zinc-900 rounded transition-all duration-300">
           Order History
         </Link>
         <Link
           to="/profile/settings"
-          className="text-zinc-100 font-semibold w-full py-2 mt-4 text-center hover:bg-zinc-900 rounded transition-all duration-300">
+          className="text-white font-semibold w-full py-2 mt-4 text-center hover:bg-zinc-900 rounded transition-all duration-300">
           Setting
         </Link>
       </div>

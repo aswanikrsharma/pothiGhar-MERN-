@@ -37,17 +37,17 @@ const Login = () => {
   };
   return (
     <>
-      <div className="h-auto bg-zinc-900 px-12 py-8 flex items-center justify-center">
-        <div className="bg-zinc-800 rounded-lg px-8 py-5 w-full md:w-3/6">
-          <p className="text-zinc-200 text-xl text-center">Login</p>
+      <div className="h-auto  px-12 py-8 flex items-center justify-center shadow-md">
+        <div className="shadow-lg rounded-lg px-8 py-5 w-full md:w-3/6">
+          <p className="text-pink-500 text-3xl text-center">Login</p>
           <div className="mt-4">
             <div>
-              <label htmlFor="" className="text-zinc-400">
+              <label htmlFor="" className="text-black">
                 Username
               </label>
               <input
                 type="text"
-                className="w-full mt-2 bg-zinc-900 text-zinc-100 p-2 outline-none"
+                className="w-full mt-2 text-zinc-100 p-2 outline-none shadow-sm"
                 placeholder="Enter full name"
                 name="username"
                 value = {values.username}
@@ -58,12 +58,12 @@ const Login = () => {
           </div>
           <div className="mt-4">
             <div>
-              <label htmlFor="" className="text-zinc-400">
+              <label htmlFor="" className="text-black">
                 password
               </label>
               <input
                 type="password"
-                className="w-full mt-2 bg-zinc-900 text-zinc-100 p-2 outline-none"
+                className="w-full mt-2 shadow-sm text-zinc-100 p-2 outline-none"
                 placeholder="Enter password"
                 name="password"
                 value = {values.password}
@@ -75,11 +75,11 @@ const Login = () => {
           <div className="flex items-center justify-center mt-4">
             <button
               type="submit"
-              className="bg-blue-600 rounded-md w-full py-2 text-2xl font-semibold text-white hover:text-black hover:bg-white transition-all duration-300" onClick={submit}>
+              className="bg-blue-600 rounded-md w-full py-2 text-2xl font-semibold text-white hover:text-black hover:bg-white border border-blue-500 transition-all duration-300" onClick={submit}>
               Login
             </button>
           </div>
-          <div className="mt-4 text-yellow-100">
+          <div className="mt-4 text-black">
             Don't have an account?{" "}
             <Link className="text-blue-600 underline" to="/signup">
               Sign Up

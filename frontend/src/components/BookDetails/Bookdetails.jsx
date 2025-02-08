@@ -70,10 +70,10 @@ const deleteBook = async (bookid) => {
   return (
     <>
       {Data && (
-        <div className=" px-4 md:px-12 py-8 bg-zinc-900 flex flex-col md:flex-row gap-8 items-start">
+        <div className=" px-4 md:px-12 py-8 flex flex-col md:flex-row gap-8 items-start shadow-md">
           <div className="w-full md:w-3/6">
             {" "}
-            <div className=" flex flex-col md:flex-row justify-around bg-zinc-800 p-12 rounded  md:gap-8">
+            <div className=" flex flex-col md:flex-row justify-around shadow-lg p-12 rounded  md:gap-8">
               {" "}
               <img
                 src={Data.url}
@@ -82,10 +82,10 @@ const deleteBook = async (bookid) => {
               {isLoggedIn === true && role === "user" && (
                 <div className="flex flex-col md:flex-row items-center justify-between md:justify-start lg:flex-col mt-8 md:mt-0">
                   <button
-                    className="bg-white rounded md:rounded-full text-4xl md:3xl p-2 text-red-500 flex items-center justify-center "
+                    className="bg-blue-500 rounded md:rounded-full text-3xl md:3xl p-2 text-red-500 flex items-center justify-center "
                     onClick={handleFav}>
                     <FaHeart />{" "}
-                    <span className="ms-4 block md:hidden text-black">
+                    <span className="ms-4 block md:hidden text-white">
                       Add to Fav
                     </span>
                   </button>
@@ -108,23 +108,23 @@ const deleteBook = async (bookid) => {
             </div>
           </div>
           <div className="p-4 w-full md:w-3/6">
-            <h1 className="text-4xl text-zinc-300 font-semibold">
+            <h1 className="text-4xl text-black font-semibold">
               {Data.title}
             </h1>
-            <p className="text-zinc-400 mt-1">by {Data.author}</p>
-            <p className="text-zinc-500 mt-4 text-xl">{Data.description}</p>
-            <p className="flex mt-4 items-center justify-start text-zinc-400">
+            <p className="text-zinc-500 mt-1">by {Data.author}</p>
+            <p className="text-zinc-400 mt-4 text-xl">{Data.description}</p>
+            <p className="flex mt-4 items-center justify-start text-zinc-500">
               <GrLanguage className="me-3" />
               {Data.language}
             </p>
-            <p className="text-zinc-100 mt-4 text-3xl font-semibold">
+            <p className="text-black mt-4 text-3xl font-semibold">
               ₹ {Data.price}
             </p>
           </div>
         </div>
       )}
       {!Data && (
-        <div className="h-screen bg-zinc-900 flex items-center justify-center">
+        <div className="h-screen flex items-center justify-center">
           <Loader />{" "}
         </div>
       )}

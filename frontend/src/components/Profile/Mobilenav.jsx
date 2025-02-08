@@ -9,17 +9,17 @@ const Mobilenav = () => {
         <div className="w-full flex items-center justify-between mt-4 md:hidden">
           <Link
             to="/profile"
-            className="text-zinc-100 font-semibold w-full  text-center hover:bg-zinc-900 rounded transition-all duration-300">
+            className="text-black font-semibold w-full  text-center hover:bg-pink-500 hover:text-white rounded transition-all duration-300">
             Favourites
           </Link>
           <Link
             to="/profile/orderHistory"
-            className="text-zinc-100 font-semibold w-full  text-center hover:bg-zinc-900 rounded transition-all duration-300">
+            className="font-semibold w-full  text-center hover:bg-pink-500 hover:text-white rounded transition-all duration-300">
             Order History
           </Link>
           <Link
             to="/profile/settings"
-            className="text-zinc-100 font-semibold w-full text-center hover:bg-zinc-900 rounded transition-all duration-300">
+            className="hover:bg-pink-500 hover:text-white font-semibold w-full text-center rounded transition-all duration-300">
             Setting
           </Link>
         </div>
@@ -28,12 +28,12 @@ const Mobilenav = () => {
         <div className="w-full flex items-center justify-between mt-4 md:hidden">
           <Link
             to="/profile"
-            className="text-zinc-100 font-semibold w-full  text-center hover:bg-zinc-900 rounded transition-all duration-300">
+            className="hover:bg-pink-500 hover:text-white font-semibold w-full  text-center rounded transition-all duration-300">
             All Orders
           </Link>
           <Link
             to="/profile/add-book"
-            className="text-zinc-100 font-semibold w-full  text-center hover:bg-zinc-900 rounded transition-all duration-300">
+            className="hover:bg-pink-500 hover:text-white font-semibold w-full  text-center rounded transition-all duration-300">
             Add Book
           </Link>
         </div>

@@ -13,10 +13,10 @@ const RecentlyAdded = () => {
   }, []);
   return (
     <div className='mt-8 px-4'>
-    <h4 className='text-3xl text-yellow-300'>Recently added books</h4>
+    <h4 className='text-4xl text-pink-500'>Recently added books</h4>
     {!Data && (
       <div className='flex items-center justify-center my-8'>
-        <Loader />{" "}
+        <Loader />
       </div>
     )}
     <div className='my-8 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8'>

@@ -55,7 +55,7 @@ const AllOrders = () => {
       {AllOrders && AllOrders.length > 0 && (
         <>
           <div className="h-[100%] p-0 md:p-4 text-zinc-100">
-            <h1 className="text-3xl md:text-5xl font-semibold text-zinc-500 mb-8">
+            <h1 className="text-3xl md:text-5xl font-semibold text-black mb-8">
               All Orders
             </h1>
             <div className="mt-4 bg-zinc-800 w-full rounded py-2 px-4 flex gap-2">
