@@ -43,7 +43,7 @@ const Signup = () => {
               </label>
               <input
                 type="text"
-                className="w-full mt-2 shadow-sm text-zinc-100 p-2 outline-none"
+                className="w-full mt-2 shadow-sm text-zinc-800 p-2 outline-none"
                 placeholder="Enter full name"
                 name="username"
                 value={values.username}
@@ -59,7 +59,7 @@ const Signup = () => {
               </label>
               <input
                 type="email"
-                className="w-full mt-2 shadow-sm text-zinc-100 p-2 outline-none"
+                className="w-full mt-2 shadow-sm text-zinc-800 p-2 outline-none"
                 placeholder="Enter email address"
                 name="email"
                 value={values.email}
@@ -75,7 +75,7 @@ const Signup = () => {
               </label>
               <input
                 type="password"
-                className="w-full mt-2 shadow-sm text-zinc-100 p-2 outline-none"
+                className="w-full mt-2 shadow-sm text-zinc-800 p-2 outline-none"
                 placeholder="Enter password"
                 name="password"
                 value={values.password}
@@ -91,7 +91,7 @@ const Signup = () => {
               </label>
               <textarea
                 type="text"
-                className="w-full mt-2 shadow-sm text-zinc-100 p-2 outline-none"
+                className="w-full mt-2 shadow-sm text-zinc-800 p-2 outline-none"
                 placeholder="Enter address here..."
                 name="address"
                 value={values.address}

@@ -47,7 +47,7 @@ const Login = () => {
               </label>
               <input
                 type="text"
-                className="w-full mt-2 text-zinc-100 p-2 outline-none shadow-sm"
+                className="w-full mt-2 text-zinc-800 p-2 outline-none shadow-sm"
                 placeholder="Enter full name"
                 name="username"
                 value = {values.username}
@@ -63,7 +63,7 @@ const Login = () => {
               </label>
               <input
                 type="password"
-                className="w-full mt-2 shadow-sm text-zinc-100 p-2 outline-none"
+                className="w-full mt-2 shadow-sm text-zinc-800 p-2 outline-none"
                 placeholder="Enter password"
                 name="password"
                 value = {values.password}
